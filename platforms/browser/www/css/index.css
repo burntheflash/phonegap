@@ -1,0 +1,190 @@
+@import url(../fonts/Montserrat/font.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #252525;
+    font-family: "Montserrat";
+    font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    font-weight: 300;
+    margin: 0;
+}
+
+.main {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, .25);
+    display: flex;
+    align-content: center;  
+    justify-content: center;
+    width: 100%;  
+}
+
+    .header .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 20px;
+    }
+
+    .header__user {
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+        object-fit: cover;
+    }
+
+    .header__logo {
+        width: 100px;
+    }
+
+    .header__messages {
+        color: #F54B64;
+        font-size: 35px;
+    }
+
+.section {
+
+}
+
+    .section__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100px;   
+    }
+
+        .section__title h1 {
+            font-weight: 300;
+            color: #FAF9FC;
+        }
+            .section__title h1::before {
+                content: "/";
+                color: #F54B64;
+            }
+
+        .section__title a {
+
+        }
+
+    .section__action {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        border: solid 2px #F54B64;
+        color: #FAF9FC;
+        height: 40px;
+        width: 140px;
+        line-height: 40px;
+        font-size: 11px;
+        font-weight: 300;
+        text-decoration: none;
+    }
+
+.sparks-feed {
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+    .sparks-feed__item {
+        height: 60px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+
+    .sparks-feed__item img {
+        border-radius: 50px;
+        height: 60px;
+        width: 60px;
+        object-fit: cover;
+        margin: 0 5px;
+        border: solid 2px #333;
+        padding: 5px;
+    }
+
+    .sparks-feed__item img.unseen {
+        border: solid 2px #F54B64;
+        padding: 5px;
+    }
+
+.feed {}
+
+    .feed__item {
+        background: #252525;
+        margin-bottom: 60px;
+    }
+
+        .feed__item .user-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+            .feed__item .user-info__photo {
+                height: 15px;
+                width: 15px;
+                border-radius: 50px;
+                object-fit: cover;
+                margin-right: 10px;
+            }
+
+            .feed__item .user-info__username {
+                color: #FAF9FC;
+                font-size: 10px;
+                font-weight: 300;
+            }
+
+    .feed__item .media {
+        height: calc(100vw - 40px);
+        width: calc(100vw - 40px);
+        background: pink;
+    }
+   
+    .feed__item .info {
+        color: #F54B64;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 10px;
+        height: 50px;
+    }
+    
+        .feed__item .info .like {
+            display: flex;
+            align-items: center;
+        }
+
+        .feed__item .info .location {
+            display: flex;
+            align-items: center;
+        }
+
+        .feed__item .info .bx {
+            font-size: 18px;
+            margin-right: 5px;
+        }
+   
+    .feed__item .description {
+        color: #FAF9FC;
+        font-size: 10px;
+    }
+
+    .feed__item .description span {
+        color: #F54B64;
+    }
+
