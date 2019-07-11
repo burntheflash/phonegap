@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6, strong {
     }
 
 .section {
-
+    margin: 0;
 }
 
     .section__title {
@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6, strong {
             }
 
         .section__title a {
-
+            color: #F54B64;
         }
 
     .section__action {
@@ -121,7 +121,9 @@ h1, h2, h3, h4, h5, h6, strong {
         padding: 5px;
     }
 
-.feed {}
+.feed {
+    margin: 0;
+}
 
     .feed__item {
         background: #252525;
