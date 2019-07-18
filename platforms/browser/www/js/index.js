@@ -4,9 +4,9 @@ var app = {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     },
 
-    onDeviceReady: function() {
-        console.log('device ready');
-    },
+    onDeviceReady: function() { 
+        
+    }
 };
 
 app.initialize();

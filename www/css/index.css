@@ -75,10 +75,6 @@ h1, h2, h3, h4, h5, h6, strong {
                 color: #F54B64;
             }
 
-        .section__title a {
-            color: #F54B64;
-        }
-
     .section__action {
         display: flex;
         justify-content: center;
@@ -134,7 +130,6 @@ h1, h2, h3, h4, h5, h6, strong {
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            margin-bottom: 10px;
         }
 
             .feed__item .user-info__photo {
@@ -165,25 +160,25 @@ h1, h2, h3, h4, h5, h6, strong {
         font-size: 14px;
         height: 50px;
     }
-    
-        .feed__item .info .like {
-            display: flex;
-            align-items: center;
-        }
 
         .feed__item .info .location {
             display: flex;
             align-items: center;
         }
 
+            .feed__item .info .location strong {
+                font-weight: 200;
+            }
+
         .feed__item .info .bx {
-            font-size: 28px;
+            font-size: 18px;
             margin-right: 5px;
         }
    
     .feed__item .description {
         color: #FAF9FC;
-        font-size: 10px;
+        font-size: 12px;
+        margin-top: 10px;
     }
 
     .feed__item .description span {
