@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    outline: none;
 }
 
 body {
@@ -82,9 +83,10 @@ h1, h2, h3, h4, h5, h6, strong {
         border-radius: 50px;
         border: solid 2px #F54B64;
         color: #FAF9FC;
+        background: transparent;
         height: 40px;
         width: 140px;
-        line-height: 40px;
+        font-family: "Montserrat";
         font-size: 11px;
         font-weight: 300;
         text-decoration: none;
@@ -143,7 +145,7 @@ h1, h2, h3, h4, h5, h6, strong {
             .feed__item .user-info__username {
                 color: #FAF9FC;
                 font-size: 14px;
-                font-weight: 200;
+                font-weight: 300;
             }
 
     .feed__item .media {

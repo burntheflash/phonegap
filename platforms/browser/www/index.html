@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
@@ -23,12 +22,11 @@
                 <div class="section">
                     <div class="section__title">
                         <h1>sparks</h1>
-                        <a href="" class="section__action">criar spark</a>
+                        <button onclick="createSpark()" class="section__action">criar spark</button>
                     </div>
                     <div class="sparks-feed">
                         <div class="sparks-feed__item">
-                            <img src="img/200px-Skater_Tony_Hawk.jpg" class="unseen">
-                            <img src="img/200px-Skater_Tony_Hawk.jpg">
+                            <!-- sparks -->
                         </div>
                     </div>
                     <div class="feed">
@@ -55,6 +53,7 @@
             </div>
 
         <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
