@@ -1,18 +1,47 @@
-document.addEventListener('deviceready', function(){
-    listSparks()
-});
-
-function listSparks() {
-    $.getJSON('http://sparks.burntheflash.com/v1/sparks', {}, function(data) {
-        var $sparksContainer = $('.sparks-feed__item');
-        $.each(data, function(i, item){
-            $sparksContainer.append(`<img src="${item.midia}" class="unseen" />`);
+new Vue({
+    el: '#feed',
+    data() {
+        return {
+            posts: [],
+            loading: true,
+            errored: false
+        }
+    },
+    mounted() {
+        fetch('http://sparks.burntheflash.com/v1/posts')
+        .then(response => response.json())
+        .then(data => {
+            this.posts = data;
+            console.log(data)
         })
-    });
-}
+        .catch(err => {
+            console.log(err)
+            this.errored = true;
+        })
+        .finally(() => this.loading = false)
+    }
+})
 
-function createSpark() {
-    navigator.camera.getPicture(onSuccess, onFail, { quality: 20,
-        destinationType: Camera.DestinationType.FILE_URL 
-    });
-}
+new Vue({
+    el: '#sparks',
+    data() {
+        return {
+            sparks: [],
+            loading: true,
+            errored: false
+        }
+    },
+    mounted() {
+        fetch('http://sparks.burntheflash.com/v1/sparks')
+        .then(response => response.json())
+        .then(data => {
+            this.sparks = data;
+            console.log(data)
+        })
+        .catch(err => {
+            console.log(err)
+            this.errored = true;
+        })
+        .finally(() => this.loading = false)
+    }
+})

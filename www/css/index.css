@@ -103,6 +103,10 @@ h1, h2, h3, h4, h5, h6, strong {
         overflow-y: hidden;
         white-space: nowrap;
     }
+    
+    .sparkContainer {
+        display: inline-block;
+    }
 
     .sparks-feed__item img {
         border-radius: 50px;
@@ -114,7 +118,7 @@ h1, h2, h3, h4, h5, h6, strong {
         padding: 5px;
     }
 
-    .sparks-feed__item img.unseen {
+    .sparks-feed__item img.seen {
         border: solid 2px #F54B64;
         padding: 5px;
     }
@@ -148,7 +152,7 @@ h1, h2, h3, h4, h5, h6, strong {
                 font-weight: 300;
             }
 
-    .feed__item .media {
+    .feed__item .media img {
         height: calc(100vw - 40px);
         width: calc(100vw - 40px);
         background: pink;
